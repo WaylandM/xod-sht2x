@@ -1,11 +1,11 @@
 {
-  "description": "Get error code and clear error flag.",
+  "description": "Report the electronic IDs of the SHT2x device.",
   "nodes": [
     {
-      "id": "HJE5BfJCY",
+      "id": "rk71wlJRY",
       "position": {
         "units": "slots",
-        "x": 0,
+        "x": 1,
         "y": 1
       },
       "type": "xod/patch-nodes/not-implemented-in-xod"
@@ -15,47 +15,58 @@
         "__out__": "On Boot"
       },
       "description": "Update.",
-      "id": "BylE5rGyAt",
+      "id": "S1N-Dg1RF",
       "label": "UPD",
       "position": {
         "units": "slots",
-        "x": 1,
+        "x": 2,
         "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
     },
     {
+      "description": "Electronic ID A.",
+      "id": "SklMv-1At",
+      "label": "EIDA",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Electronic ID B.",
+      "id": "H1IfD-1CY",
+      "label": "EIDB",
+      "position": {
+        "units": "slots",
+        "x": 2,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
       "description": "An SHT2x device.",
-      "id": "SkXNqBGy0F",
+      "id": "SyN9v-yCt",
       "label": "DEV",
       "position": {
         "units": "slots",
-        "x": 0,
+        "x": 1,
         "y": 0
       },
       "type": "@/input-sht2x-device"
     },
     {
       "description": "Pulse on completion.",
-      "id": "HkNV9HM1CK",
+      "id": "H1oRO-JRt",
       "label": "Done",
       "position": {
         "units": "slots",
-        "x": 1,
+        "x": 3,
         "y": 2
       },
       "type": "xod/patch-nodes/output-pulse"
-    },
-    {
-      "description": "Error code.",
-      "id": "r1q2SfyRY",
-      "label": "Error",
-      "position": {
-        "units": "slots",
-        "x": 0,
-        "y": 2
-      },
-      "type": "xod/patch-nodes/output-byte"
     }
   ]
 }

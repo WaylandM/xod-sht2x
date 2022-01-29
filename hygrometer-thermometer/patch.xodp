@@ -1,0 +1,238 @@
+{
+  "description": "Combines lower level nodes to create a ready to use sensor.",
+  "links": [
+    {
+      "id": "ByugQdlAY",
+      "input": {
+        "nodeId": "H19JmuxAK",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "SJXpzdeAY",
+        "pinKey": "S1NTe1_eAt"
+      }
+    },
+    {
+      "id": "r19fXueAF",
+      "input": {
+        "nodeId": "H1-CfOg0Y",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HkAFfOgRY",
+        "pinKey": "SJWzRrfe0K"
+      }
+    },
+    {
+      "id": "rysM7dx0Y",
+      "input": {
+        "nodeId": "H1lWAM_eAt",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HkAFfOgRY",
+        "pinKey": "H1fM0SflRY"
+      }
+    },
+    {
+      "id": "rkA4XdgAK",
+      "input": {
+        "nodeId": "HkAFfOgRY",
+        "pinKey": "SymMArGxAt"
+      },
+      "output": {
+        "nodeId": "ByLtfOgRF",
+        "pinKey": "H1UwlgyAF"
+      }
+    },
+    {
+      "id": "SkErQ_x0t",
+      "input": {
+        "nodeId": "SJXpzdeAY",
+        "pinKey": "BkmpgkdeCF"
+      },
+      "output": {
+        "nodeId": "ByLtfOgRF",
+        "pinKey": "H1UwlgyAF"
+      }
+    },
+    {
+      "id": "Hkm87ugCY",
+      "input": {
+        "nodeId": "ByLtfOgRF",
+        "pinKey": "BkGqegyCY"
+      },
+      "output": {
+        "nodeId": "Sy0S7_gAK",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "H1IPXugCY",
+      "input": {
+        "nodeId": "HkAFfOgRY",
+        "pinKey": "r1lfRrGlRK"
+      },
+      "output": {
+        "nodeId": "BygDmOgRt",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Hy3_mOeRF",
+      "input": {
+        "nodeId": "SJXpzdeAY",
+        "pinKey": "S1xpe1_gRF"
+      },
+      "output": {
+        "nodeId": "ByKD7dgRY",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "ryeho_g0t",
+      "input": {
+        "nodeId": "B1-WCGugAK",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HkAFfOgRY",
+        "pinKey": "SJVGASGe0F"
+      }
+    },
+    {
+      "id": "rybhjOxRF",
+      "input": {
+        "nodeId": "S1XNXdeAF",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "HkAFfOgRY",
+        "pinKey": "rk7tcug0Y"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ByLtfOgRF",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 1
+      },
+      "type": "@/sht2x-device"
+    },
+    {
+      "id": "HkAFfOgRY",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "@/read"
+    },
+    {
+      "id": "SJXpzdeAY",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 2
+      },
+      "type": "@/reset"
+    },
+    {
+      "description": "Relative humidity (%).",
+      "id": "H1-CfOg0Y",
+      "label": "RH",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Temperature (°C).",
+      "id": "H1lWAM_eAt",
+      "label": "Temp",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-number"
+    },
+    {
+      "description": "Pulse on read.",
+      "id": "B1-WCGugAK",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Pulse on reset.",
+      "id": "H19JmuxAK",
+      "label": "_Reset",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    },
+    {
+      "description": "Error code: 00h=OK, 81h=WRITECMD, 82h=READBYTES, 83h=HEATER_OFF, 84h=NOT_CONNECT, 85h=CRC_TEMP, 86h=CRC_HUM, 87h=CRC_STATUS, 88h=HEATER_COOLDOWN, 89h=HEATER_ON.",
+      "id": "S1XNXdeAF",
+      "label": "Error",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 3
+      },
+      "type": "xod/patch-nodes/output-byte"
+    },
+    {
+      "description": "I²C bus",
+      "id": "Sy0S7_gAK",
+      "label": "I2C",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 0
+      },
+      "type": "xod/i2c/input-i2c"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "Continuously"
+      },
+      "description": "Update. Trigger read.",
+      "id": "BygDmOgRt",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 4,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "Never"
+      },
+      "description": "Soft reset.",
+      "id": "ByKD7dgRY",
+      "label": "Reset",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    }
+  ]
+}

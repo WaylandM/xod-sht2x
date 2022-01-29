@@ -1,3 +1,6 @@
 {
-  "name": "sht2x-rh-temp"
+  "description": "Library for the Sensirion SHT2x series of humidity and temperature sensors. Wraps https://github.com/RobTillaart/SHT2x. Datasheet for SHT21: https://sensirion.com/resource/datasheet/sht21",
+  "license": "MIT",
+  "name": "sht2x-rh-temp",
+  "version": "0.0.2"
 }

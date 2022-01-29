@@ -12,5 +12,6 @@ node {
         Number EIDB = sensor->getEIDB();
         emitValue<output_EIDA>(ctx, EIDA);
         emitValue<output_EIDB>(ctx, EIDB);
+        emitValue<output_Done>(ctx, 1);
     }
 }

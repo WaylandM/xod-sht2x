@@ -1,2 +1,50 @@
 {
+  "description": "Soft reset.",
+  "nodes": [
+    {
+      "id": "r1axyul0t",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/not-implemented-in-xod"
+    },
+    {
+      "boundLiterals": {
+        "__out__": "Never"
+      },
+      "description": "Update. Trigger reset.",
+      "id": "S1xpe1_gRF",
+      "label": "UPD",
+      "position": {
+        "units": "slots",
+        "x": 1,
+        "y": 0
+      },
+      "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "An SHT2x device.",
+      "id": "BkmpgkdeCF",
+      "label": "DEV",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 0
+      },
+      "type": "@/input-sht2x-device"
+    },
+    {
+      "description": "Pulse on read.",
+      "id": "S1NTe1_eAt",
+      "label": "Done",
+      "position": {
+        "units": "slots",
+        "x": 0,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/output-pulse"
+    }
+  ]
 }

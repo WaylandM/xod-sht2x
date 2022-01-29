@@ -8,6 +8,7 @@ node {
             return;
 
         auto sensor = getValue<input_DEV>(ctx);
-        emitValue<output_Error>(ctx, sensor->getError());
+        sensor->reset();
+        emitValue<output_Done>(ctx, 1);
     }
 }

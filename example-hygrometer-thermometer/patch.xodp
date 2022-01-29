@@ -1,0 +1,196 @@
+{
+  "description": "Patch for testing sensor. Run in debug mode.",
+  "links": [
+    {
+      "id": "SywQVuxAF",
+      "input": {
+        "nodeId": "r1kQ4OgAY",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "ByVgEdg0F",
+        "pinKey": "H1-CfOg0Y"
+      }
+    },
+    {
+      "id": "HJ2Q4OxRF",
+      "input": {
+        "nodeId": "By5QNueAY",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "ByVgEdg0F",
+        "pinKey": "H1lWAM_eAt"
+      }
+    },
+    {
+      "id": "rkgV4_lRK",
+      "input": {
+        "nodeId": "HJp74dl0K",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "ByVgEdg0F",
+        "pinKey": "S1XNXdeAF"
+      }
+    },
+    {
+      "id": "ByOS4_lRt",
+      "input": {
+        "nodeId": "ByVgEdg0F",
+        "pinKey": "BygDmOgRt"
+      },
+      "output": {
+        "nodeId": "HJzBNOxRt",
+        "pinKey": "HJU8CE2lW"
+      }
+    },
+    {
+      "id": "Bk6UEOeAK",
+      "input": {
+        "nodeId": "SJXLNOxCF",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "ByVgEdg0F",
+        "pinKey": "B1-WCGugAK"
+      }
+    },
+    {
+      "id": "SykwE_e0K",
+      "input": {
+        "nodeId": "rJ9UEul0t",
+        "pinKey": "HJAq-A_8-"
+      },
+      "output": {
+        "nodeId": "ByVgEdg0F",
+        "pinKey": "H19JmuxAK"
+      }
+    },
+    {
+      "id": "H1yK4ueCK",
+      "input": {
+        "nodeId": "ByVgEdg0F",
+        "pinKey": "ByKD7dgRY"
+      },
+      "output": {
+        "nodeId": "BJKON_gRt",
+        "pinKey": "Bkf4BDsmV"
+      }
+    },
+    {
+      "id": "rk3KNug0t",
+      "input": {
+        "nodeId": "ryOtVdgAF",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "rJ9UEul0t",
+        "pinKey": "r1yhZRd8W"
+      }
+    },
+    {
+      "id": "rkpKNOlRK",
+      "input": {
+        "nodeId": "SJVYVugCF",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "SJXLNOxCF",
+        "pinKey": "r1yhZRd8W"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ByVgEdg0F",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 1
+      },
+      "type": "@/hygrometer-thermometer"
+    },
+    {
+      "id": "r1kQ4OgAY",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "By5QNueAY",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "HJp74dl0K",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 2
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "HJzBNOxRt",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 0
+      },
+      "type": "xod/core/clock"
+    },
+    {
+      "id": "SJXLNOxCF",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 2
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "id": "rJ9UEul0t",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 2
+      },
+      "type": "xod/core/count"
+    },
+    {
+      "id": "BJKON_gRt",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 0
+      },
+      "type": "xod/debug/tweak-pulse"
+    },
+    {
+      "id": "SJVYVugCF",
+      "position": {
+        "units": "slots",
+        "x": 9,
+        "y": 3
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "ryOtVdgAF",
+      "position": {
+        "units": "slots",
+        "x": 12,
+        "y": 3
+      },
+      "type": "xod/debug/watch"
+    }
+  ]
+}

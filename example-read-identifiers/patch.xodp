@@ -1,4 +1,5 @@
 {
+  "description": "Patch for retrieving sensor identification numbers. Run in debug mode.",
   "links": [
     {
       "id": "SyWzFZJRt",
